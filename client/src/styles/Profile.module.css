@@ -1,0 +1,216 @@
+.page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9.5vh;
+    margin-top: 150px;
+  }
+  
+.page h4 {
+    color: #613d2b;
+    font-family: avenirb;
+    font-weight: 900;
+    font-size: 24px;
+  }
+  .mainProfile {
+    display: flex;
+    margin-left: 10vw;
+    justify-content: space-around;
+  }
+  .myProfile .infoPerson {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 21px;
+  }
+  .myProfile .infoPerson img {
+    width: 180px;
+    height: cover;
+    margin-right: 28px;
+  }
+  .infoPerson article {
+    font-family: avenir;
+  }
+  .infoPerson h5 {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #613d2b;
+  }
+  .infoPerson p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .profilePic {
+    color: transparent;
+    transition: all 0.3s ease;
+    /* @include object-center; */
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .profilePic input {
+    display: none;
+  }
+  
+  .profilePic img {
+    position: absolute;
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+    border-radius: 100px;
+    z-index: 0;
+  }
+  
+  .-label {
+    cursor: pointer;
+    height: 165px;
+    width: 165px;
+  }
+  
+  .profilePic:hover -label {
+    /* @include object-center; */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    color: rgb(250, 250, 250);
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 100px;
+    margin-bottom: 0;
+  }
+  
+  .profilePic span {
+    display: inline-flex;
+    padding: 0.2em;
+    height: 2em;
+  }
+  
+  .products {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vw;
+  }
+  .product {
+    width: 36vw;
+    height: 22vh;
+    background-color: #f6e6da;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .photoProduct:hover {
+    transform: scale(1.2);
+    transition: 100ms;
+    cursor: pointer;
+  }
+  .product .detailProduct {
+    display: flex;
+  }
+  .product .productr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .productr .wbIcon {
+    width: 5vw;
+    height: 3vh;
+    margin-bottom: 10px;
+  }
+  .qr {
+    height: autovh;
+    width: 5.5vw;
+    transition: transform 0.5s;
+    cursor: zoom-in;
+  }
+  .qr:hover {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+  .productr div {
+    width: 112px;
+    height: 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 255, 117, 0.1) 0%,
+      rgba(0, 255, 133, 0.1) 100%
+    );
+    border-radius: 2px;
+    font-family: avenir;
+    font-weight: 500;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #00ff47;
+    margin-top: 13px;
+  }
+  .productr .status {
+    background: #caf8ad;
+    color: #78a85a;
+  }
+  .productr .statusw {
+    background-color: #ffd085d0;
+    color: #ff9900;
+  }
+  .productr .statuso {
+    background: #613d2b;
+    color: #ffffff;
+    border-radius: 2px;
+    border: none;
+    font-family: avenir;
+    font-weight: 500;
+    font-size: 10px;
+    width: 112px;
+    height: 19px;
+    margin-top: 13px;
+  }
+  .productr .statusc {
+    background-color: rgb(255, 179, 179);
+    color: red;
+  }
+  .detailProduct img {
+    width: 5.6vw;
+    height: 15vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .detailProduct .number {
+    display: flex;
+    flex-direction: column;
+  }
+  .number .productName {
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 14px;
+    font-family: avenirb;
+    color: #613d2b;
+  }
+  .number .date {
+    margin-bottom: 1.5em;
+    font-weight: 900;
+    font-size: 9px;
+    font-family: avenir;
+    color: #613d2b;
+  }
+  .number .date b {
+    font-family: avenirb;
+  }
+  .number .productPrice,
+  .productQty {
+    margin-bottom: 0.3em;
+    font-size: 10px;
+    font-family: avenir;
+    color: #974a4a;
+  }
+  .number .subTotal {
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 10px;
+    font-family: avenirb;
+    color: #974a4a;
+  }
